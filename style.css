@@ -28,16 +28,8 @@ header{
     position: absolute;
     top: 5%;
     left: 10%;
-    animation: animate 2.5s infinite;
-}
-
-@keyframes animate {
-    0%, 100%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(10px);
-    }
+    animation: animate 2.5s infinite;  
+    /* keyframes at the end of the file */
 }
 
 header h1{
@@ -122,6 +114,7 @@ form button:hover{
     background: hsl(0, 0%, 100%, 0.1);
     border-radius: 20px;
     padding: 0px 10px;
+    overflow: visible;
 }
 
 .todo li{
@@ -209,7 +202,16 @@ select:hover{
     bottom: -3%;
     right: 18%;
     box-shadow: 20px 20xp 50px rgba(0, 0, 0, 0.5);
-    animation: animate 2.5s infinite;
+    animation: animate 3s infinite;
+}
+
+@keyframes animate {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
 }
 
 ::-webkit-scrollbar {
